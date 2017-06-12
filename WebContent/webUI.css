@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#everything {
+	padding: 30px;
+	border-style: solid;
+	border-width: 2px;
+	height: 100px;
+	width: 300px;
+
+}
+
+
+
+ul {
+	list-style-type: none;
+}
+
+
+li {
+	float: left;
+	border-style: solid;
+	border-radius: 50%;
+}
+
+.kahala {
+	width: 20%;
+	height: 80%;
+}
