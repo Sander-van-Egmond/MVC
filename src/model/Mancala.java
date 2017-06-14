@@ -45,4 +45,5 @@ public class Mancala{
 			}
 		return bakje.getSteentjes();
 	}
+	
 }
