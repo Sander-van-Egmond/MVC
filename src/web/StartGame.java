@@ -11,7 +11,7 @@ public class StartGame extends HttpServlet { //SERVLET
 	public void doPost(HttpServletRequest request,
 			HttpServletResponse response)
 			throws IOException, ServletException {
-		
+		HttpSession session = request.getSession();
 		Mancala game = new Mancala();
 		ArrayList<Integer> veldContent = new ArrayList<Integer>();
 		for (int i=0;i<14;i++){
@@ -19,6 +19,7 @@ public class StartGame extends HttpServlet { //SERVLET
 		}
 
 		request.setAttribute("bakjes", veldContent);
+		session.setAttribute("spel", game);
 		
 		RequestDispatcher view = request.getRequestDispatcher("Game.jsp");
 		

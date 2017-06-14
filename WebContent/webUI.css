@@ -10,7 +10,7 @@
 	min-width: 450px;
 	margin: 5vh 5vw;
 	height: 30vh;
-	width: 78vw;
+	width: 72vw;
 	padding: 2vh 2vw;
 	border-style: solid;
 	border-width: 0.5vh 0.5vw;
@@ -21,7 +21,7 @@
 	background-color: rgba(0, 0, 0, 0.2);
 	display: inline-block;
 	width: 8vw;
-	height: 10vh;
+	height: 12vh;
 	border-style: solid;
 	border-radius: 50%;
 	border-width: 0.3vh 0.3vw;
@@ -31,20 +31,20 @@
 
 .kahala {
 	background-color: rgba(0, 0, 0, 0.2);
-	vertical-align: middle;
 	width: 10vw;
-	height: 25vh;
+	height: 30vh;
 	border-style: solid;
 	border-radius: 50%;
 	border-width: 0.3vh 0.3vw;
-	line-height: 24vh;
-	text-align: center;
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .alleBakjes {
 	
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 .bakje:hover {
@@ -54,4 +54,10 @@
 .bakje:active {
   box-shadow: 0 5px #666;
   transform: translateY(-4px);
+}
+
+#division {
+	display: inline-block;S
+	width: 48vw;
+	height: 6vh;
 }

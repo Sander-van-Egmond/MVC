@@ -5,25 +5,31 @@
         http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
         
         
-   <servlet>
-       <servlet-name>Kies Bakje</servlet-name>
-       <servlet-class>web.BeerSelect</servlet-class>
-   </servlet>
 
-   <servlet-mapping>
-       <servlet-name>Kies Bakje</servlet-name>
-       <url-pattern>/Bakje.do</url-pattern>
-   </servlet-mapping>
-   
-   
    
    <servlet>
        <servlet-name>Start Spel</servlet-name>
        <servlet-class>web.StartGame</servlet-class>
+       <load-on-startup>1</load-on-startup>
    </servlet>
 
    <servlet-mapping>
        <servlet-name>Start Spel</servlet-name>
        <url-pattern>/StartGame.do</url-pattern>
    </servlet-mapping>
+   
+   
+   
+   <servlet>
+       <servlet-name>Kies Bakje</servlet-name>
+       <servlet-class>web.BakjeSelect</servlet-class>
+       <load-on-startup>2</load-on-startup>
+   </servlet>
+
+   <servlet-mapping>
+       <servlet-name>Kies Bakje</servlet-name>
+       <url-pattern>/SelectBakje.do</url-pattern>
+   </servlet-mapping>
+   
+   
 </web-app>
